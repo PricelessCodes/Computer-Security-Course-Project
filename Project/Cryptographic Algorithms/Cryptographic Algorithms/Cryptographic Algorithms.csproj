@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36602458-8380-4EDE-B6DB-4B9C2123B217}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cryptographic_Algorithms</RootNamespace>
+    <AssemblyName>Cryptographic Algorithms</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Diffie Hellman Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diffie Hellman Form.Designer.cs">
+      <DependentUpon>Diffie Hellman Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ELGamal Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ELGamal Form.Designer.cs">
+      <DependentUpon>ELGamal Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form.Designer.cs">
+      <DependentUpon>Main Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RC4 Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RC4 Form.Designer.cs">
+      <DependentUpon>RC4 Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RSA Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RSA Form.Designer.cs">
+      <DependentUpon>RSA Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="S-DES Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="S-DES Form.Designer.cs">
+      <DependentUpon>S-DES Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Diffie Hellman Form.resx">
+      <DependentUpon>Diffie Hellman Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ELGamal Form.resx">
+      <DependentUpon>ELGamal Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form.resx">
+      <DependentUpon>Main Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RC4 Form.resx">
+      <DependentUpon>RC4 Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RSA Form.resx">
+      <DependentUpon>RSA Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="S-DES Form.resx">
+      <DependentUpon>S-DES Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
