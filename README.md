@@ -1,5 +1,5 @@
 # Computer-Security-Course-Project
-S-DES, RC4, RSA, and El-Gamal Cryptographic Algorithms. And also Diffie-Hellman Key Generator Algorithm. Coded in C#.
+S-DES, RC4, RSA, and El-Gamal Cryptographic Algorithms. And also Diffie-Hellman and El-Gamal Key Generator Algorithms. Coded in C#.
 
 For more details read the documentation and look at Screen shots at Project folder.
 
